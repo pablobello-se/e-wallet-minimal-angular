@@ -9,6 +9,8 @@ Solución al ejercicio **Frontend Developer 2026** de Greelow ([repo original](h
 
 ## Documentación de la solución / entregables
 
+La documentación presentada es extensa, dado que la idea es justamente identificar, verificar, documentar y justificar todas las ambigüedades o puntos pobremente definidos (intencionalmente) a lo largo de toda la consigna, para posterior implementación de las soluciones a dichos puntos y/o ambigüedades. Dado que se está tratando con un sistema (si bien ficticio) de gestión de información financiera, el tratamiento cuidadoso y atento de la información es un aspecto central.
+
 - [Instalación y ejecución](#instalación-y-ejecución) — instrucciones para levantar la API y la UI (requisito obligatorio).
 - [`DECISIONS.md`](./docs/DECISIONS.md) — documentación de decisiones (requisito obligatorio).
 - [`AI_NOTES.md`](./docs/AI_NOTES.md) — documentación del uso de IA generativa (requisito obligatorio).
