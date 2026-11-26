@@ -18,4 +18,40 @@ La documentación presentada es extensa, dado que la idea es justamente identifi
 
 ## Instalación y ejecución
 
-> En construcción.
+**Requisitos:** Node 22 LTS (ver [`.nvmrc`](./.nvmrc); `better-sqlite3` no compila en Node 24 sobre Windows), npm y Google Chrome para los tests.
+
+### 1. API (`mock-api`)
+
+```bash
+cd mock-api
+npm install
+npm run seed     # crea data.db con datos de ejemplo; correrlo de nuevo resetea la base
+npm start        # http://localhost:3000
+```
+
+### 2. UI (`ui`)
+
+En otra terminal, con la API corriendo:
+
+```bash
+cd ui
+npm install
+npx ng serve     # http://localhost:4200
+```
+
+### 3. Usuarios de prueba
+
+| Email | Password | Cuentas |
+|---|---|---|
+| `demo@example.com` | `demo123` | ARS y USD |
+| `test@example.com` | `test123` | ARS |
+| `ana@example.com` | `ana123` | ARS |
+
+`demo` tiene cuentas en dos monedas, lo que permite probar el bloqueo multimoneda. Las transferencias a otro usuario se prueban entre `demo` y `test` o `ana`.
+
+### 4. Tests
+
+```bash
+cd ui
+npm test -- --watch=false --browsers=ChromeHeadless
+```
